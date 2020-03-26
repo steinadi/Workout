@@ -1,0 +1,633 @@
+﻿      <!------------------------------->   
+      <!----------- workoutstar ------------>
+      <!------------------------------->    
+
+      <!------------   Not to forget: video link + facebook link     -----------> 
+      <!------------   Not to forget: Look for TODO     -----------> 
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+      <!------------  old mvp      ----------->
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+      <link rel="stylesheet" href="https://cdn.webrtc-experiment.com/style.css">
+
+      <!--     --------         -->
+
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/animate.min.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link href="css/lightbox.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+      <link href="css/simple-sidebar.css" rel="stylesheet">
+      <link href="css/getMediaElement2.css" rel="stylesheet">
+
+
+      <!--     --------         -->
+
+
+
+
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" href="images/favicon.ico">
+
+     
+      <style>
+          * {
+              word-wrap: break-word;
+          }
+
+          video {
+              object-fit: fill;
+              width: 30%;
+          }
+
+
+          select {
+              font-weight: normal;
+              padding: 2px 4px;
+              text-decoration: none;
+              display: inline-block;
+              text-shadow: none;
+              font-size: 16px;
+              outline: none;
+          }
+
+          .make-center {
+              text-align: center;
+              padding: 5px 10px;
+          }
+
+          img, input, textarea {
+              max-width: 100%;
+          }
+
+          @media all and (max-width: 500px), (max-height: 600px) {
+              .fork-left, .fork-right, .github-stargazers {
+                  display: none;
+              }
+          }
+
+          article {
+              background: #fff;
+              border: 1px solid;
+              border-color: #ddd #aaa #aaa #ddd;
+              margin: 1em auto 0 auto;
+              padding: 0.1em !important;
+              max-width: 1350px !important;
+          }
+
+          .container-fluid {
+              padding-right: 1px !important;
+              padding-left: 1px !important;
+              margin-right: auto;
+              margin-left: auto;
+          }
+      </style>
+     
+      <!------------  old mvp      ----------->
+
+      <!------------   Dashboard      ----------->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> workoutstar | Have fun!</title>
+
+   
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.css" rel="stylesheet" media="screen">
+
+      <!-- NProgress -->
+      <link href="css/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+      <link href="css/custom.min.css" rel="stylesheet">
+
+       <!-- <style>
+          body {
+              background-image: url("images/Garden-Studio.jpg");
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+          }
+      </style>
+            -->
+
+
+
+      <style>
+          .modal {
+              position: fixed;
+              right: o;
+              top: 40px;
+          }
+
+          .modal-header,
+          .btn-custom {
+              background: #1ABC9C;
+              color: #FFF;
+              /* margin-right: 10px; */
+          }
+
+          .modal-body {
+              background: #73BFC1;
+          }
+
+          .popover {
+              background-color: #e74c3c;
+              color: #ecf0f1;
+              width: 120px;
+          }
+
+              .popover.right .arrow:after {
+                  border-right-color: #e74c3c;
+              }
+
+          .input-group[class*="col-"] {
+              padding-right: 15px;
+              padding-left: 15px;
+          }
+      </style>
+
+
+  </head>
+
+  <body class="nav-md">
+
+      <!--.preloader-->
+     <!-- <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div> -->
+      <!--/.preloader-->
+
+
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+
+                <table>
+                    <tr>
+                        <td>
+                            <div class="nav toggle">
+                                <a href="http://www.workoutstar.online/indexHebAuth.html" style="text-decoration: none;">
+                                    <i class="fa fa-home"></i>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-chevron-circle-left"></i></a>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+                <br /><br /><br />
+
+
+
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <!--    <h3>General</h3> -->
+                        <div id="videos-container"></div>
+
+                        <div class="make-center">
+                            1. Choose a unique room name:<br />
+                            <input type="text" id="room-id" value="abcdef" autocorrect=off autocapitalize=off size=20> <br /><br />
+                            2. Open your private room:
+                            <button id="open-room" style="color:white">Open Room</button><br />
+
+
+                            3. Invite friend by sending link or via Facebook button:<br />
+                            <div id="room-urls" style="text-align: center;display: none;background: #F1EDED;margin: 15px -10px;border: 1px solid rgb(189, 189, 189);border-left: 0;border-right: 0;"></div>
+                            <br />
+
+                            <div id="fb_text">_</div>
+                            <div id="fb" class="fb-send" data-href=""></div>
+                            <br />
+                        </div>
+                    </div>
+
+                </div>
+                <br /><br /><br />
+                <i class="fa fa-balance-scale"></i> CALORIES:<p style="font-size: 16px; color:darkgreen;" id="demo">0</p>
+
+                <br /><br /><br /><br />
+                <!-- /sidebar menu -->
+
+                <button id="join-room" style="visibility:hidden;"></button>
+                <button id="open-or-join-room" style="visibility:hidden;"></button>
+            </div>
+        </div>
+
+          <!-- top navigation -->
+          <!--
+          <div class="top_nav">
+              <div class="nav_menu">
+                  <nav>
+                      <div class="nav toggle">
+                          <a id="menu_toggle"><i class="fa fa-chevron-circle-left"></i></a>
+                      </div>
+                
+                      <!--
+                          <ul class="nav navbar-nav navbar-right">
+                          <!--     <li class="">
+                                       <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                           <img src="images/img.jpg" alt="">USER
+                                           <span class=" fa fa-angle-down"></span>
+                                       </a>
+                                       <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                           <li><a href="javascript:;"> Profile</a></li>
+                                           <li>
+                                               <a href="javascript:;">
+                                                   <span class="badge bg-red pull-right">50%</span>
+                                                   <span>Settings</span>
+                                               </a>
+                                           </li>
+                                           <li><a href="javascript:;">Help</a></li>
+                                           <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                       </ul>
+                                   </li> -->
+
+                  
+
+                      <!-----                  ----------------                     -----------------                    --------------            -->
+
+                      <!-- <li><a href="javascript:void(0)"><i class="fa fa-bar-chart-o"></i> Personal progress <span class="label label-success pull-right">Coming Soon</span></a></li>
+                          -->
+               
+                  
+                      <!-- </ul>  --
+                  </nav>
+              </div>
+          </div>
+          -->
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+            <table>
+                <tr>
+                      <!--   <td>
+                        <div class="container-fluid">
+                            <div id="player">  </div>
+                            <figure>
+                                <canvas id="motion"></canvas>
+                                <figcaption>
+                                    Motion Heatmap<br>
+                                    Score: <span id="score">?</span>
+                                    Score: <span id="scoreSum">?</span>
+                                </figcaption>
+                            </figure>
+                            <script src="https://webrtc.github.io/adapter/adapter-1.0.7.js"></script>
+                            <script src="js/diff-cam-engine.js"></script>
+                            <script src="js/movement.js"></script>
+                           <script> var WebSiteURL = ""; </script>
+
+                        </div>
+                        
+                    </td>
+                          -->
+                       
+                    <td>
+                        <div class="container-fluid">
+                           
+                            
+                            <!-- ......................TODO -Change to youtube class................   -->
+                            <iframe width="1200" height="605" src="https://www.youtube.com/embed/0iuloCCe1eM" frameborder="0" allowfullscreen></iframe>
+
+
+                            <div id="player"></div>
+                          
+                           
+                            <!--   </section>    -->
+                            <!-- <script src="/dist/rmc3.min.js"></script> -->
+                            <script src="https://cdn.webrtc-experiment.com:443/rmc3.min.js"></script>
+
+                            <!-- custom layout for HTML5 audio/video elements -->
+                            <script src="../js/getMediaElement2.js"></script>
+                            <!--     <script src="https://cdn.webrtc-experiment.com/getMediaElement.js"></script> -->
+
+                            <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+                            <script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.min.js"></script>
+                            <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+
+                            <!-- socket.io for signaling -->
+                            <!--    <script src="https://cdn.webrtc-experiment.com:443/socket.io.js"></script>  -->
+
+                          
+                            <script>
+                                // ......................................................
+                                // .......................UI Code........................
+                                // ......................................................
+
+                                document.getElementById('open-room').onclick = function () {
+                                    disableInputButtons();
+                                    connection.open(document.getElementById('room-id').value, function () {
+                                        showRoomURL(connection.sessionid);
+                                    });
+                                };
+
+                                document.getElementById('join-room').onclick = function () {
+                                    disableInputButtons();
+                                    connection.join(document.getElementById('room-id').value);
+                                };
+
+                                document.getElementById('open-or-join-room').onclick = function () {
+                                    disableInputButtons();
+                                    connection.openOrJoin(document.getElementById('room-id').value, function (isRoomExists, roomid) {
+                                        if (!isRoomExists) {
+                                            showRoomURL(roomid);
+                                        }
+                                    });
+                                };
+
+                                // ......................................................
+                                // ..................RTCMultiConnection Code.............
+                                // ......................................................
+
+                                var connection = new RTCMultiConnection();
+                                var flag = 5;
+
+                                // by default, socket.io server is assumed to be deployed on your own URL
+                                connection.socketURL = '/';
+
+                                // comment-out below line if you do not have your own socket.io server
+                                connection.socketURL = 'https://rtcmulticonnection.herokuapp.com:443/';
+
+                                connection.socketMessageEvent = 'video-conference-demo';
+
+                                connection.session = {
+                                    audio: true,
+                                    video: true
+                                };
+
+                                connection.sdpConstraints.mandatory = {
+                                    OfferToReceiveAudio: true,
+                                    OfferToReceiveVideo: true
+                                };
+
+                                connection.videosContainer = document.getElementById('videos-container');
+
+                                connection.videosContainer2 = document.getElementById('videos-container-lesson');
+
+                                connection.onstream = function (event) {
+                                    //var width = parseInt(connection.videosContainer.clientWidth / 4) - 20;
+                                    var width = '100%';
+                                    var mediaElement = getMediaElement(event.mediaElement, {
+                                        title: event.userid,
+                                        buttons: ['mute-video', 'mute-audio'],
+                                        width: width,
+                                        showOnMouseEnter: false
+                                    });
+
+                                    var newElem = document.createElement("BR");
+                                    connection.videosContainer.appendChild(newElem);
+                                    connection.videosContainer.appendChild(mediaElement);
+
+                                    if (flag == 1) {
+                                        //var width = parseInt(connection.videosContainer.clientWidth);
+                                        var width = '100%';
+                                        var mediaElement = getMediaElement(event.mediaElement, {
+                                            title: event.userid,
+                                            buttons: ['mute-video', 'mute-audio'],
+                                            width: width,
+                                            showOnMouseEnter: false
+                                        });
+                                        connection.videosContainer2.appendChild(mediaElement);
+
+                                    }
+
+                                    //  flag = flag + 1;
+
+                                    setTimeout(function () {
+                                        mediaElement.media.play();
+                                    }, 5000);
+
+                                    mediaElement.id = event.streamid;
+                                };
+
+                                connection.onstreamended = function (event) {
+                                    var mediaElement = document.getElementById(event.streamid);
+                                    if (mediaElement) {
+                                        mediaElement.parentNode.removeChild(mediaElement);
+                                    }
+                                };
+
+                                function disableInputButtons() {
+                                    document.getElementById('open-or-join-room').disabled = true;
+                                    document.getElementById('open-room').disabled = true;
+                                    document.getElementById('join-room').disabled = true;
+                                    document.getElementById('room-id').disabled = true;
+                                }   
+
+                                // ......................................................
+                                // ......................Handling Room-ID................
+                                // ......................................................
+
+                                function showRoomURL(roomid) {
+                                    var roomHashURL = '#' + roomid;
+                                    var roomQueryStringURL = '?roomid=' + roomid;
+                                    // ......................TODO -Change to class ID................
+                                    var roomQueryStringURLforFB = 'https://s3-eu-west-1.amazonaws.com/www.workoutstar.online/workouts/118.html?roomid=' + roomid;
+
+                                    var html = '<h2>Unique URL for your room:</h2><br>';
+
+                                    html += 'Hash URL: <a href="' + roomHashURL + '" target="_blank">' + roomHashURL + '</a>';
+                                    html += '<br>';
+                                    html += 'QueryString URL: <a href="' + roomQueryStringURL + '" target="_blank">' + roomQueryStringURL + '</a>';
+
+                                    var roomURLsDiv = document.getElementById('room-urls');
+                                    roomURLsDiv.innerHTML = html;
+
+
+                                    document.getElementById('fb_text').innerHTML = "Invite Facebook friends:";
+                                    document.getElementById("fb").setAttribute("data-href", roomQueryStringURLforFB);
+
+
+                                    (function fb(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1261029847270313";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));
+
+
+
+
+
+                                    roomURLsDiv.style.display = 'block';
+                                }
+
+                                (function () {
+                                    var params = {},
+                                        r = /([^&=]+)=?([^&]*)/g;
+
+                                    function d(s) {
+                                        return decodeURIComponent(s.replace(/\+/g, ' '));
+                                    }
+                                    var match, search = window.location.search;
+                                    while (match = r.exec(search.substring(1)))
+                                        params[d(match[1])] = d(match[2]);
+                                    window.params = params;
+                                })();
+
+                                var roomid = '';
+                                if (localStorage.getItem(connection.socketMessageEvent)) {
+                                    roomid = localStorage.getItem(connection.socketMessageEvent);
+                                } else {
+                                    roomid = connection.token();
+                                }
+                                document.getElementById('room-id').value = roomid;
+                                document.getElementById('room-id').onkeyup = function () {
+                                    localStorage.setItem(connection.socketMessageEvent, this.value);
+                                };
+
+                                var hashString = location.hash.replace('#', '');
+
+                                var roomid = params.roomid;
+                                if (!roomid && hashString.length) {
+                                    roomid = hashString;
+                                }
+
+                                if (roomid && roomid.length) {
+                                    document.getElementById('room-id').value = roomid;
+                                    localStorage.setItem(connection.socketMessageEvent, roomid);
+
+                                    // auto-join-room
+                                    (function reCheckRoomPresence() {
+                                        connection.checkPresence(roomid, function (isRoomExists) {
+                                            if (isRoomExists) {
+                                                connection.join(roomid);
+                                                return;
+                                            }
+
+                                            setTimeout(reCheckRoomPresence, 5000);
+                                        });
+                                    })();
+
+                                    disableInputButtons();
+                                }
+
+                                // ......................................................
+                                // ......................Record session................
+                                // ......................................................
+
+                              
+
+                            </script>
+
+
+                            <section class="experiment">
+                                <h2 class="header" id="feedback">Feedback</h2>
+                                <div>
+                                    <textarea id="message" style="height: 8em; margin: .2em; width: 98%; border: 1px solid rgb(189, 189, 189); outline: none; resize: vertical;" placeholder="Have any message? Suggestions or something went wrong?"></textarea>
+                                </div>
+                                <button id="send-message" style="font-size: 1em;">Send Message</button><small style="margin-left:1em;">Enter your email too; if you want "direct" reply!</small>
+                            </section>
+
+
+
+                            <script>
+                                window.useThisGithubPath = 'muaz-khan/RTCMultiConnection';
+                            </script>
+                            <script src="https://cdn.webrtc-experiment.com/commits.js" async></script>
+
+                            <!--</article>-->
+
+
+
+                            <br><br><br><br><br><br><br><br>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            
+
+         
+
+           
+
+            </div>
+
+        <!-- /page content --> 
+      </div>
+    </div>
+
+      <!-- Movement -->
+
+      <script src="../js/diff-cam-engine.js"></script>
+      <script src="../js/movement.js"></script>
+
+         <!--  <script>
+          function myFunction() {
+              var x = document.getElementsByTagName("BUTTON")[0].textContent;
+              document.getElementById("demo").innerHTML = x;
+          }
+      </script>
+-->
+     
+    <!-- jQuery --> 
+      <script src="../js/jquery.min.js"></script>  
+    <!-- Bootstrap -->
+      <script src="../js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+      <script src="../js/fastclick.js"></script>
+    <!-- NProgress -->
+      <script src="../js/nprogress.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+      <script src="../js/custom.min.js"></script>
+
+
+
+      <!-- Old mvp scripts -->
+     
+      <script type="text/javascript" src="../js/jquery.inview.min.js"></script>
+      <script type="text/javascript" src="../js/wow.min.js"></script>
+      <script type="text/javascript" src="../js/mousescroll.js"></script>
+      <script type="text/javascript" src="../js/smoothscroll.js"></script>
+      <script type="text/javascript" src="../js/jquery.countTo.js"></script>
+      <script type="text/javascript" src="../js/lightbox.min.js"></script>
+      <script type="text/javascript" src="../js/main.js"></script>
+      <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+      <!-- /Old mvp scripts -->
+
+
+      <!-- custom layout for HTML5 audio/video elements -->
+      <script type="text/javascript" src="../js/getMediaElement2.js"></script>
+      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+      <script src="https://cdn.pubnub.com/pubnub-3.7.23.min.js"></script>
+      <script src="https://cdn.kevingleason.me/webrtc.js"></script>
+
+
+
+  </body>
+</html>
+

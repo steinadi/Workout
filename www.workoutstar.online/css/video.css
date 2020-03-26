@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#video-landing {
+    width: 100% !important;
+    height: 100% !important;
+  position: relative;
+  overflow-y: hidden;
+  color: white;
+}
+
+#video-landing video {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  width:auto;
+  height:auto;
+  top: -200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+}
+
+#video-landing h1{
+ 	font-size: 3em; 
+}
+
+}
+.spacer { min-height: 420px; }
+.dark_bg { background:rgba(0,0,0,0.5); }
+.dark2_bg {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(45,45,45,0)), color-stop(100%,rgba(45,45,45,0.8))), url(images/dot.png);;
+}
